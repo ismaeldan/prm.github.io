@@ -3,9 +3,9 @@ import styles from './services.module.css';
 export function Services() {
  
   return (
-    <main id='home_services' className={styles.services}>
+    <main className={styles.services}>
       <div className='container'>
-        <h1>Conheça nossos serviços</h1>
+        <h1 id='home_services'>Conheça nossos serviços</h1>
 
         <div className={styles.service__item}>
           <img src="https://placehold.co/540x500" alt="Trocar placeholder" />

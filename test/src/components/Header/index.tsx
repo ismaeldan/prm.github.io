@@ -118,7 +118,7 @@ export function Header() {
         <div className={styles.menu}>
           <Link smooth className={`${isLinkActive('home') ? styles.active : ''}`} to="/#home">Home</Link>
           <Link smooth className={`${isLinkActive('about') ? styles.active : ''}`} to='/#about'>Sobre</Link>
-          <Link className={`${isLinkActive('services', '/services') ? styles.active : ''}`} to="/services/#home_services">Serviços</Link>
+          <Link className={`${isLinkActive('services', '/services') ? styles.active : ''}`} to="/services">Serviços</Link>
           <Link smooth className={`${isLinkActive('prw_embalagens') ? styles.active : ''}`} to="/#prw_embalagens">PRW Embalagens</Link>
           <Link smooth className={`${isLinkActive('contact') ? styles.active : ''}`} to='/#contact'>Contato</Link>
         </div>

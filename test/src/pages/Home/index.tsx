@@ -106,26 +106,24 @@ const [activeLink, setActiveLink] = useState<string>('');
           <div className={`${styles.container__services} container`}>
 
             <div className={styles.services__title}>
-              <Link to="/services/#home_services">
-                <h2>Serviços</h2>
-              </Link>
+              <h2>Serviços</h2>
               <p>Nosso compromisso vai além da impressão. Desde o primeiro contato até a entrega final, priorizamos a sua experiência, oferecendo qualidade impecável, agilidade e, acima de tudo, a tranquilidade de saber que seu material está em boas mãos.</p>
             </div>
 
             <div className={styles.services__cards}>
-              <Link className={styles.service__card} to="/services/#silk_screen">
+              <Link className={styles.service__card} to="/services">
                   <img src={SilkScreen} alt="Icon-SilkScreen" className={styles.silk}/>
                   <h3>Silk Screen</h3>
                   <p>Neste processo, a tinta é pressionada através de uma tela esticada sobre o objeto, criando um design durável e de alta qualidade.</p>
               </Link>
 
-              <Link className={styles.service__card} to="/services/#transfer">
+              <Link className={styles.service__card} to="/services">
                 <img src={Transfer} alt="Icon-Transfer" />
                 <h3>Transfer</h3>
                 <p>O design é impresso em papel especial e transferido para o brinde por calor e pressão, garantindo alta qualidade e durabilidade.</p>
               </Link>
 
-              <Link className={styles.service__card} to="/services/#laser">
+              <Link className={styles.service__card} to="/services">
                 <img src={Laser} alt="Icon-Laser" />
                 <h3>Laser</h3>
                 <p>A gravação a laser utiliza um feixe de alta precisão para vaporizar ou queimar a superfície de materiais, criando marcas permanentes.</p>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecionando...</title>
+    <script type="text/javascript">
+      // Obtém o caminho da URL atual, incluindo a query string e o hash
+      var path = window.location.pathname;
+      var query = window.location.search;
+      var hash = window.location.hash;
+
+      // Verifica se o caminho começa com o nome do repositório (necessário para GitHub Pages)
+      // Substitua '/prm.github.io/' pelo nome do seu repositório com barras!
+      var repoName = 
+      '/prm.github.io/'; 
+      var redirectPath = path.startsWith(repoName) ? path.substring(repoName.length -1) : path;
+
+      // Armazena o caminho completo (sem o nome do repo), query e hash no sessionStorage
+      // O React Router (ou seu app) pode ler isso para ir para a rota correta
+      sessionStorage.redirect = redirectPath + query + hash;
+
+      // Redireciona para a raiz do site (onde está o index.html)
+      // O script no index.html vai ler o sessionStorage e redirecionar internamente
+      window.location.replace(repoName);
+
+    </script>
+  </head>
+  <body>
+    Se você não for redirecionado automaticamente, <a href="/prm.github.io/">clique aqui</a>.
+  </body>
+</html>
