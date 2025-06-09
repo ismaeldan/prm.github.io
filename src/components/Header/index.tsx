@@ -24,7 +24,7 @@ const CloseIcon = () => (
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState<string>('');
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile menu
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const headerRef = useRef<HTMLElement | null>(null);
   const location = useLocation();
 
@@ -34,7 +34,7 @@ export function Header() {
       setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check initial scroll position
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -50,7 +50,7 @@ export function Header() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        let currentActive = activeSection; // Keep current if no new intersection
+        let currentActive = activeSection;
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
              currentActive = entry.target.id;
@@ -62,7 +62,7 @@ export function Header() {
         }
       },
       {
-        rootMargin: '-50% 0px -50% 0px', // Adjust rootMargin for better accuracy
+        rootMargin: '-50% 0px -50% 0px',
         threshold: 0
       }
     );

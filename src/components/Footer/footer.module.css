@@ -58,32 +58,32 @@ footer{
 /* Medium devices (tablets, 768px and down) */
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Center items vertically */
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    gap: 2rem; /* Increase gap for vertical layout */
+    gap: 2rem;
   }
 
   .text {
     text-align: center;
-    order: 2; /* Change order if needed */
+    order: 2;
   }
 
   .social {
     order: 3;
-    gap: 1.8rem; /* Adjust gap for social icons */
+    gap: 1.8rem;
   }
 
   .logo {
      order: 1;
-     margin-bottom: 1rem; /* Add space below logo */
+     margin-bottom: 1rem;
   }
 }
 
 /* Small devices (phones, 576px and down) */
 @media (max-width: 575.98px) {
   .social img {
-    height: 30px; /* Smaller icons on very small screens */
+    height: 30px;
     width: 30px;
   }
   .social {

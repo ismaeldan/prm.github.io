@@ -66,15 +66,15 @@ header {
 
 /* Mobile Menu Toggle Button (Hidden by default) */
 .menuToggle {
-    display: none; /* Hide on desktop */
+    display: none;
     background: none;
     border: none;
     cursor: pointer;
     padding: 0.5rem;
-    z-index: 110; /* Ensure it's above other header content */
+    z-index: 110;
 }
 
-.menuToggle svg { /* Style the SVG icon */
+.menuToggle svg {
     width: 30px;
     height: 30px;
     color: #0B223F;
@@ -82,25 +82,25 @@ header {
 
 /* Mobile Menu Container (Hidden by default) */
 .mobileMenu {
-    display: none; /* Hide on desktop */
+    display: none;
     flex-direction: column;
     position: fixed;
-    top: 72px; /* Position below header */
+    top: 72px;
     left: 0;
     width: 100%;
     background-color: #F9F9F9;
     padding: 1rem 0;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    z-index: 99; /* Below header but above content */
+    z-index: 99;
 }
 
 .mobileMenu.open {
-    display: flex; /* Show when open */
+    display: flex;
 }
 
 .mobileMenu a {
     color: #0B223F;
-    padding: 1rem 1.5rem; /* Adjust padding as needed */
+    padding: 1rem 1.5rem;
     text-align: center;
     border-bottom: 1px solid #e4e4e4;
     font-size: 1.1rem;

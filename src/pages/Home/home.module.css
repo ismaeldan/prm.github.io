@@ -138,8 +138,7 @@
 
 .services__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .service__card {
@@ -148,8 +147,8 @@
   border-bottom: 0.25rem solid #809dbf;
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
-  background-color: #fff; /* Add background for contrast */
-  display: flex; /* Use flex for vertical alignment inside card */
+  background-color: #fff;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -279,10 +278,10 @@ ul li img {
 /* Small devices (landscape phones, 768px and down) */
 @media (max-width: 768px) {
   .container__home, .container__about, .container__prw, .container__contact {
-    flex-direction: column; /* Stack elements */
+    flex-direction: column;
     padding: 4rem 0;
     gap: 3rem;
-    text-align: center; /* Center text */
+    text-align: center;
   }
 
   .container__home a{
@@ -304,11 +303,11 @@ ul li img {
   }
 
   .image__home::before, .image__about::before {
-      display: none; /* Hide decorative elements on small screens */
+      display: none;
   }
 
   .container__about .image__about {
-      order: 1; /* Reset order */
+      order: 1;
   }
   .container__about .text__about {
       order: 2;
@@ -331,7 +330,7 @@ ul li img {
   }
 
   .services__cards {
-      grid-template-columns: 1fr; /* Single column */
+      grid-template-columns: 1fr;
       gap: 1.5rem;
   }
 
