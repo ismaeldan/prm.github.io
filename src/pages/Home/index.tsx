@@ -166,9 +166,9 @@ const [activeLink, setActiveLink] = useState<string>('');
 
           <div className={styles.contact__links}>
             <ul className={styles.contact__list}>
-              <li><img src={Phone_Icon} alt="Phone Icon" />11 93900-6543</li>
-              <li><img src={Map_Icon} alt="Map Icon" />R. Barra Funda, 659 - Barra Funda São Paulo - SP</li>
-              <li><img src={Email_Icon} alt="Email Icon" />comercial@prmgravacoes.com.br</li>
+              <li><a href="tel:11939006543"><img src={Phone_Icon} alt="Phone Icon" />11 93900-6543</a></li>
+              <li><a href="https://www.google.com.br/maps/place/R.+Jaguarete,+43+-+Casa+Verde,+S%C3%A3o+Paulo+-+SP,+02515-010/@-23.5100064,-46.6553836,3a,75y,152.31h,92.08t/data=!3m7!1e1!3m5!1szxpc9_IiuBRLom6ocJwYYQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-2.079094628692104%26panoid%3Dzxpc9_IiuBRLom6ocJwYYQ%26yaw%3D152.30882097294617!7i16384!8i8192!4m6!3m5!1s0x94cef7e689756f1d:0x9d0c69976f23d709!8m2!3d-23.5102466!4d-46.6552022!16s%2Fg%2F11c4mrgkww?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><img src={Map_Icon} alt="Map Icon" />R. Barra Funda, 659 - Barra Funda São Paulo - SP</a></li>
+              <li><a href="mailto:comercial@prmgravacoes.com.br?subject=Orçamento&body=Olá, gostaria de fazer um orçamento com vcs"><img src={Email_Icon} alt="Email Icon" />comercial@prmgravacoes.com.br</a></li>
             </ul>
           </div>
 

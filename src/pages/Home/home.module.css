@@ -245,7 +245,7 @@
   max-width: 45%;
 }
 
-ul li{
+ul li, ul li a {
   display: flex;
   align-items: center;
   gap:  0.75rem;
@@ -299,7 +299,7 @@ ul li img {
   }
 
   .image__home, .text__home, .image__about, .text__about, .image__prw, .text__prw, .contact__text, .contact__list {
-    max-width: 100%; /* Full width when stacked */
+    max-width: 95%;
     margin: 0;
   }
 
