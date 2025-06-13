@@ -94,6 +94,28 @@ export function Services() {
 
           <img src="https://placehold.co/540x500" alt="Trocar placeholder" />
         </div>
+
+        <div className={styles.service__item}>
+          <img src="https://placehold.co/540x500" alt="Trocar placeholder" />
+
+          <div id='tampografia' className={styles.service__item__content}>
+            <div className={styles.line}></div>
+            <h2>Gravação Digital UV</h2>
+            <p>A gravação digital UV é um processo de impressão direta que utiliza tintas especiais curadas por luz ultravioleta, resultando em impressões resistentes, duráveis e com alta definição em diversas superfícies. Este método permite cores vivas e efeitos visuais sofisticados, sendo ideal para tiragens curtas e médias devido à sua agilidade, personalização e baixo custo inicial, já que dispensa o uso de clichês ou matrizes.</p>
+            <div className={styles.line}></div>
+          </div>
+        </div>
+
+        <div id='transfer' className={styles.service__item}>
+          <div className={styles.service__item__content__reverse}>
+            <div className={styles.line}></div>
+            <h2>Gravação Digital UV 360</h2>
+            <p>A gravação digital UV 360 é uma evolução da impressão UV tradicional, focada na personalização completa de objetos cilíndricos ou curvos, como garrafas e canecas, em toda a sua circunferência. Ela utiliza a mesma tecnologia de cura por luz UV para garantir impressões duráveis, resistentes e com alta fidelidade de cores, mas se diferencia por sua capacidade de imprimir em 360 graus, através da rotação controlada do objeto, permitindo detalhes finos e efeitos como relevo em superfícies curvas.</p>
+            <div className={styles.line}></div>
+          </div>
+
+          <img src="https://placehold.co/540x500" alt="Trocar placeholder" />
+        </div>
       </div>  
     </main> 
   )
