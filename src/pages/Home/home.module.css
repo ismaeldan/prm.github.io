@@ -364,7 +364,7 @@ ul li img {
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
   .container__home, .container__about, .container__prw, .container__contact, .container__services {
     padding: 3rem 0;
   }
