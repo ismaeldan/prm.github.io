@@ -390,9 +390,19 @@ ul li img {
       width: 20px;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
+  .image__home img, 
+  .image__about img, 
+  .image__prw img {
+    width: 400px;
+    height: 265px;
   }
 }
 
+@media (max-width: 400px) {
+ .image__home img, 
+  .image__about img, 
+  .image__prw img {
+    width: 300px;
+    height: 200px;
+  }
+}
